@@ -80,8 +80,8 @@ if st.sidebar.button('predict'):
   X_df.loc[0] = X_input
   X_scaled = scaler.transform(X_df)
   y = model.predict(X_scaled)
-  if y ==0:
+  if y == 1:
     st.write("Customer is predicted to buy the insurance")
-  elif y ==1:
+  elif y ==0:
     st.write("Customer is predicted to not buy the insurance")
 
