@@ -9,6 +9,7 @@ job_list = {"blue-collar":1,"entrepreneur":2, "housemaid":3, "services":4,"techn
                             "admin.": 7, "management": 8, "unemployed":9, "retired":10, "student":11}
 education_list = {'primary':1,"secondary":2,"tertiary":3}
 month_list = {"may":1,"jul":2,"jan":3,"nov":4,"jun":5,"aug":6,"feb":7,"apr":8,"oct":9,"sep":10,"dec":11,"mar":12}
+st.write("Insurance customer converstion prediction")
 age = st.sidebar.selectbox(options = range(1,100),label = "select age")
 job_option = st.sidebar.selectbox(options = job_list, label = "select job")
 job = job_list[job_option]
