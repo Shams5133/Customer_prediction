@@ -82,6 +82,6 @@ if st.sidebar.button('predict'):
   y = model.predict(X_scaled)
   if y ==0:
     st.write("Customer is predicted to buy the insurance")
-  elif y =1:
+  elif y ==1:
     st.write("Customer is predicted to not buy the insurance")
 
