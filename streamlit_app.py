@@ -8,7 +8,7 @@ with open('scaler.pkl', 'rb') as f:
 job_list = {"blue-collar":1,"entrepreneur":2, "housemaid":3, "services":4,"technician":5, "self-employed":6,
                             "admin.": 7, "management": 8, "unemployed":9, "retired":10, "student":11}
 education_list = {'primary':1,"secondary":2,"tertiary":3}
-month_list = {"may":1,"jul":2,"jan":3,"nov":4,"jun":5,"aug":6,"feb":7,"apr":8,"oct":9,"sep":10,"dec":11,"mar":12}
+month_list = {"January":3,"February":7,"March":12,"April":8,"May":1,"June":5,"July":2,"August":6,"September":10,"October":9,"November":4,"December":11}
 st.write("Insurance customer converstion prediction")
 age = st.sidebar.selectbox(options = range(1,100),label = "select age")
 if age > 70:
