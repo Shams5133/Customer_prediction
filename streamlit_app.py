@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
-with open('model (1).pkl', 'rb') as f:
+with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
@@ -11,6 +11,8 @@ education_list = {'primary':1,"secondary":2,"tertiary":3}
 month_list = {"may":1,"jul":2,"jan":3,"nov":4,"jun":5,"aug":6,"feb":7,"apr":8,"oct":9,"sep":10,"dec":11,"mar":12}
 st.write("Insurance customer converstion prediction")
 age = st.sidebar.selectbox(options = range(1,100),label = "select age")
+if age > 70:
+    age = 70
 job_option = st.sidebar.selectbox(options = job_list, label = "select job")
 job = job_list[job_option]
 education_option = st.sidebar.selectbox(options = education_list, label = "select educational qualification")
